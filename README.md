@@ -1,7 +1,7 @@
 # HashMap
 Hashmap library
 
-# makefile commands
+### makefile commands
 1.make<br>
 ____compiles files into a static library<br>
 ____creates executable by compiling main and the static library<br>
