@@ -13,10 +13,10 @@ debug :
 	@echo $(INC)
 
 obj/%.o : src/%.c $(INC)
+	mkdir -p obj
 	gcc -c $< -o $@
 
 exe : $(OBJ)
-	mkdir obj
 	ar -rcs libhash.a $(STATIC)
 	gcc -fsanitize=address obj/main.o libhash.a -o $@
 
